@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtualenv
+.venv/
+venv/
+ENV/
+env/
+
+# Data (large or real Kaggle)
+data/*.txt
+data/train*
+!data/generate_synthetic.py
+!data/sample_train.csv   # small synthetic is ok to commit
+
+# Results
+benchmarks/results/*.png
+benchmarks/results/*.csv
+!benchmarks/results/.gitkeep
+
+# AWS / temp
+*.zip
+*.log
+.terraform/
+*.tfstate*
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
